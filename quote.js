@@ -38,4 +38,19 @@ const quotes = [
     name: "Chimamanda Ngozi Adicie",
     quote: "Nobody just leaves medical school, especially given it's fiercely competitive to get in. But I had a sister who was a doctor, another who was a pharmacist, a brother who was an engineer. So my parents already had sensible children who would be able to make an actual living, and I think they felt comfortable sacrificing their one strange child."
 }
+
 ]
+
+const quoteBtn = document.querySelector('button');
+const quote = document.querySelector("#quote");
+const authorQuote = document.querySelector("#author-quote");
+
+quoteBtn.addEventListener('click', displayQuotes);
+
+function displayQuotes() {
+    let number = Math.floor(Math.random()*quotes.length);
+    // console.log(number);
+
+    authorQuote.innerHTML = quotes[number].name;
+    quote.innerHTML = quotes[number].quote; 
+}
