@@ -6,23 +6,26 @@ let count = 0;
 
 addCount.addEventListener('click', incrementCounter);
 lowerCount.addEventListener('click', decrementCounter);
-counter.addEventListener('click', changeColor);
 
 function incrementCounter() {
     count++;
     counter.innerHTML = count;
+    if (counter.innerHTML > '0') {
+        counter.style.color = '#4caf50';
+    } else if (counter.innerHTML === '0') {
+        counter.style.color = '#ffdd55';
+    }
 }
 
 function decrementCounter() {
     count--;
     counter.innerHTML = count;
+    if (counter.innerHTML < '0') {
+        counter.style.color = '#ff0000';
+    } else if (counter.innerHTML === '0') {
+        counter.style.color = '#ffdd55'
+    }
 }
 
-function changeColor() {
-    let color = addCount.style.color;
-    let color = lowCount.style.color;
-    addCount.style.color = 'green'; 
-    lowCount.style.color = 'red';
-}
 
 
