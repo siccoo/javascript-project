@@ -15,6 +15,17 @@ function incrementCounter() {
     } else if (counter.innerHTML === '0') {
         counter.style.color = '#ffdd55';
     }
+    counter.animate([
+        {
+            opacity: '0.2'
+        },
+        {
+            opacity: '1.0'
+        }
+    ], {
+        duration: 1000,
+        fill: 'forwards'
+    });
 }
 
 function decrementCounter() {
@@ -25,6 +36,17 @@ function decrementCounter() {
     } else if (counter.innerHTML === '0') {
         counter.style.color = '#ffdd55'
     }
+    counter.animate([
+        {
+            opacity: '0.2'
+        },
+        {
+            opacity: '1.0'
+        }
+    ], {
+        duration: 1000,
+        fill: 'forwards'
+    });
 }
 
 
