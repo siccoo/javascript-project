@@ -19,7 +19,7 @@ body {
     position: relative;
 }
 
-.btn {
+button {
     display: inline-block;
     background: #fff;
     color: #000;
@@ -33,4 +33,23 @@ body {
 
 .prevBtn {
     position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+button:active {
+    background: grey;
+    box-shadow: 1px 1px #b5b2b2;
+}
+button:hover {
+    background: #3cf23c;
+    color: #ffffff;
 }
