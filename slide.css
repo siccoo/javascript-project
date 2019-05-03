@@ -13,7 +13,7 @@ body {
     min-height: 70vh;
     flex: 0 0 80%;
     background: #8080;
-    background: url('images/bcg0.jpeg')center/cover no-repeat;
+    background: url('images/bcg-0.jpeg')center/cover no-repeat;
     border-radius: 10px;
     box-shadow: 3px 6px #444444;
     position: relative;
