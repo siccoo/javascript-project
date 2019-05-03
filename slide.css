@@ -1,0 +1,36 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/lite.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.images {
+    min-height: 70vh;
+    flex: 0 0 80%;
+    background: #8080;
+    background: url('images/bcg0.jpeg')center/cover no-repeat;
+    border-radius: 10px;
+    box-shadow: 3px 6px #444444;
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    border: 2px solid #01011c;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    box-shadow: 1px 3px #0d0d2a;
+    outline: none;
+}
+
+.prevBtn {
+    position: absolute;
+}
