@@ -43,3 +43,18 @@ button:hover {
     color: #fff;
     background: #f5923e;
 }
+.btn-grey {
+    background: #f4f4f4;
+}
+
+.btn, .btn-equal, .btn-clear {
+    font-size: 4rem;
+}
+
+.btn-clear {
+    background: #008000;
+}
+
+.btn-equal {
+    background: #ff0000;
+}
