@@ -47,7 +47,7 @@ button:hover {
     background: #f4f4f4;
 }
 
-.btn, .btn-equal, .btn-clear {
+.btn, #button, .btn-equal, .btn-clear {
     font-size: 4rem;
 }
 
