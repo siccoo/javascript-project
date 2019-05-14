@@ -1,4 +1,4 @@
-const btns = document.querySelectorAll('button');
+const btns = document.querySelectorAll('.btn');
 const screen = document.querySelector('.screen');
 const equalBtn = document.querySelector('.btn-equal');
 const clearBtn = document.querySelector('.btn-clear');
@@ -12,8 +12,12 @@ for(i = 0; i < btns.length; i++) {
 };
 
 equalBtn.addEventListener('click', function(){
+    if(screen.value === '') {
+        alert("Please input field is empty");
+    } else {
     let value = eval(screen.value);
     screen.value = value;
+    }   
 });
 
 clearBtn.addEventListener('click', function(){
